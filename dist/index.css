@@ -6,36 +6,40 @@
 
 body{
     display: flex;
+    flex-direction: column;
     background-color:  hsl(218, 23%, 16%);
-    justify-content: center;
+    /* align-items: center; */
 }
 
 .Card{
     background: hsl(217, 19%, 24%);
     display: block;
     width: 40%;
-    height: 310px;
-    margin-top: 160px;
-    border-radius: 20px;
+    /* height: 19.375em; */
+    /* position: relative; */
+    top: 10px;
+    margin:  0px auto ;
+    margin-top: 10em;
+    border-radius: 1.3em;
 }
 
 .adviceContent{
     word-wrap: normal;
-    width: 395px;
-    padding: 10px;
-    margin-left: calc(180px / 2);
+    width: 70%;
+    padding: .8em;
+    margin-left: 5em;
     
 }
 .adviceContent p{
     text-align: center;
-    font-size: 28px;
+    font-size: 1.65em;
     color: hsl(193, 38%, 86%);
 }
 #quoteNumber{
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    font-size: 14px;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    font-size: .9em;
     color: hsl(150, 100%, 66%);
     letter-spacing: 2px;
 }
@@ -43,18 +47,18 @@ img{
     display: block;
 }
 #Divider{
-    padding: 20px;
-    margin-left: 30px;
+    padding: 1.25em;
+    margin-left: 1.875em;
 }
+
 .roundcontainer{
-    padding: 20px;
+    padding: 1.2em;
     background: hsl(150, 100%, 66%);
     width: fit-content;
-    border-radius: 50%;
-    z-index: -1;
-    margin-top: 24px;
-    margin-left: calc(480px / 2);
+    border-radius: 100%;
+    margin: auto;
 }
+
 .roundcontainer:hover{
     box-shadow: 0px 0px 20px 2px hsl(150, 100%, 66%);
     cursor: pointer;
@@ -63,7 +67,7 @@ img{
 .attribution{
     font-size: 13px;
      text-align: center;
-     margin-top: 20px;
+     margin-top: 1.25em;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%);
@@ -72,33 +76,22 @@ img{
 @media screen and  (max-width: 500px) {
 
     .Card{
-        background: hsl(217, 19%, 24%);
-        display: block;
-        width: 350px;
-        margin-top: 120px;
-        border-radius: 20px;
+        width: 90%;
     }
 
     .adviceContent{
-        word-wrap: normal;
-        width: 320px;
-        margin-left: 10px;
+        width: 100%;
+        margin-left: 0px;
     }
 
     #Divider{
-        padding: 20px;
+        padding: 25px;
         margin-left: 0px;
-        width: 350px;
+        width: 100%;
     }
 
-    .roundcontainer{
-        padding: 20px;
-        background: hsl(150, 100%, 66%);
-        width: fit-content;
-        border-radius: 50%;
-        z-index: -1;
-        margin-top: 0px;
-        margin-left: 140px;
+    #quoteNumber{
+        padding-bottom: .5em;
     }
     
 }
