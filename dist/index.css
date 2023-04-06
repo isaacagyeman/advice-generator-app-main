@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('/assets/fonts/Manrope-VariableFont_wght.ttf');
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -8,6 +12,8 @@ body{
     display: flex;
     flex-direction: column;
     background-color:  hsl(218, 23%, 16%);
+    font-family: 'Manrope';
+    
 }
 
 .Card{
@@ -22,15 +28,15 @@ body{
 
 .adviceContent{
     word-wrap: normal;
-    width: 70%;
-    padding: .8em;
-    margin-left: 5em;
-    
+    width: 90%;
+    padding: .5em;
+    margin: 0 auto;
 }
 .adviceContent p{
     text-align: center;
-    font-size: 1.65em;
+    font-size: 28px;
     color: hsl(193, 38%, 86%);
+    font-weight: 800;
 }
 #quoteNumber{
     text-align: center;
@@ -63,14 +69,14 @@ img{
     cursor: pointer;
 }
 
-.attribution{
+/* .attribution{
     font-size: 13px;
      text-align: center;
      margin-top: 1.25em;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%);
-}
+} */
 
 @media screen and  (max-width: 500px) {
 
@@ -80,7 +86,6 @@ img{
 
     .adviceContent{
         width: 100%;
-        margin-left: 0px;
     }
 
     #Divider{
