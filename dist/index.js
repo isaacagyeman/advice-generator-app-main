@@ -11,7 +11,7 @@ function displayData(data){
     const {id} = data['id'];
     const {advice} = data['advice'];
 
-    adviceNumber.innerHTML = id;
+    adviceNumber.innerHTML = 'ADVICE #'+id;
     adviceText.innerHTML = advice;
 }
 
