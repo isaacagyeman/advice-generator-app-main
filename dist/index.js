@@ -3,7 +3,8 @@ var adviceNumber = document.querySelector('#quoteNumber')
 var btngenerateAdvice = document.querySelector('.roundcontainer')
 
 
-btngenerateAdvice.addEventListener('click', ()=>{
+function getData(){
+    
     fetch('https://api.adviceslip.com/advice')
     .then((respnse) => respnse.json())
     .then((data) =>{
@@ -11,6 +12,12 @@ btngenerateAdvice.addEventListener('click', ()=>{
         adviceText.innerHTML = data.slip.advice;
         console.log(data);
     } );
+}
+
+window.addEventListener('load',getData)
+
+btngenerateAdvice.addEventListener('click', ()=>{
+    getData();
 });
 
 
