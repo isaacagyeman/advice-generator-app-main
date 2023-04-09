@@ -2,19 +2,15 @@ var adviceText = document.querySelector('#quote')
 var adviceNumber = document.querySelector('#quoteNumber')
 var btngenerateAdvice = document.querySelector('.roundcontainer')
 
-fetch('https://api.adviceslip.com/advice')
-.then((response) => response().json())
-.then((data) => displayData(data));
-
-function displayData(data){
-    // const {slip} = data;
-    const {id} = data['id'];
-    const {advice} = data['advice'];
-
-    adviceNumber.innerHTML = 'ADVICE #'+id;
-    adviceText.innerHTML = advice;
-}
 
 btngenerateAdvice.addEventListener('click', ()=>{
-displayData(data)
+    fetch('https://api.adviceslip.com/advice')
+    .then((respnse) => respnse.json())
+    .then((data) =>{
+        adviceNumber.innerHTML = 'ADVICE #'+data.slip.id;
+        adviceText.innerHTML = data.slip.advice;
+        console.log(data);
+    } );
 });
+
+
