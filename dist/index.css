@@ -20,6 +20,7 @@ body{
     background: hsl(217, 19%, 24%);
     display: block;
     width: 40%;
+    max-width: 650px;
     top: 10px;
     margin:  0px auto ;
     margin-top: 10em;
@@ -51,7 +52,8 @@ img{
 }
 #Divider{
     padding: 1.25em;
-    margin-left: 1.875em;
+    margin: auto;
+    max-width: 100%;
 }
 
 .roundcontainer{
@@ -69,14 +71,7 @@ img{
     cursor: pointer;
 }
 
-/* .attribution{
-    font-size: 13px;
-     text-align: center;
-     margin-top: 1.25em;
-}
-.attribution a { 
-    color: hsl(228, 45%, 44%);
-} */
+
 
 @media screen and  (max-width: 500px) {
 
@@ -90,7 +85,6 @@ img{
 
     #Divider{
         padding: 25px;
-        margin-left: 0px;
         width: 100%;
     }
 
